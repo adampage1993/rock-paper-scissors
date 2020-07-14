@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    text-align: center;
+}
+
+h1 {
+    padding: 1.5rem;
+}
+
+.icons {
+    cursor: pointer;
+}
+
+.instruction {
+}
+
+.icons {
+    font-size: 5rem;
+}
+
+.scoreboard {
+    display: flex;
+    padding: 1rem;
+    justify-content: space-around;
+    width: 30vw;
+    margin: 0 auto;
+}
+
+.badge {
+    background-color: rgb(131, 131, 226);
+    flex: 6;
+}
+
+#comp-score, #user-score {
+    flex: 1;
+}
