@@ -5,27 +5,42 @@ const scissors = document.querySelector("#scissors");
 
 // Event Listeners
 rock.addEventListener("click", function () {
-  console.log("hello");
+  game('rock');
 });
 paper.addEventListener("click", function () {
-  console.log("hi");
+  game('paper');
 });
 scissors.addEventListener("click", function () {
-  console.log("bye");
+  game('scissors');
 });
 
+
 // Functions
-function computerChoice() {
-  const num = Math.floor(Math.random() * 3);
-  switch (num) {
-    case 0:
-      console.log("rock");
+function getComputerChoice() {
+  const choices = ['rock', 'paper', 'scissors'];
+  const randomNum = Math.floor(Math.random() * 3);
+  return choices[randomNum];
+}
+
+function game(userChoice) {
+  const computerChoice = getComputerChoice();
+  switch (userChoice + computerChoice) {
+    case 'rockscissors':
+    case 'paperrock':
+    case 'scissorspaper':
+      console.log('user wins');
       break;
-    case 1:
-      console.log("paper");
+    case 'rockpaper':
+    case 'paperscissors':
+    case 'scissorsrock':
+      console.log('computer wins');
       break;
-    case 2:
-      console.log("scissors");
+    case 'rockrock':
+    case 'paperpaper':
+    case 'scissorsscissors':
+      console.log('draw');
       break;
   }
 }
+
+game();
