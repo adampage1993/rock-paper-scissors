@@ -7,11 +7,11 @@
 body {
     font-family: 'Mulish', sans-serif;
     text-align: center;
-    background: #fafafa;
+    background: #5292a5;
 }
 
 header {
-    background: #204051;
+    background: #102c3b;
     padding: 1rem;
     color: #e4e3e3;
 }
@@ -29,13 +29,13 @@ header {
 
 .icons {
     cursor: pointer;
-    color: #3b6978;
+    color: #ddd6d6;
     font-size: 5rem;
 }
 
 .badge {
-    background-color: #3b6978;
-    font-weight: 500;
+    background-color: #265869;
+    font-weight: 700;
     flex: 6;
     border-radius: 3px;
     margin: 0 5px;
@@ -44,6 +44,8 @@ header {
 .result {
     margin: 1rem;
     padding: 1rem;
+    color: #e4e3e3;
+    font-weight: 800;
 }
 
 #comp-score, #user-score {
@@ -51,5 +53,5 @@ header {
 }
 
 #rock:hover, #paper:hover, #scissors:hover {
-    color: #84a9ac;
+    color: #6fbec7;
 }
